@@ -4,12 +4,10 @@
   
   # Diretório onde ficam os arquivos finais
   publish = "dist"
-  
-  # Versão do Node.js
-  environment = { NODE_VERSION = "18" }
 
 [build.environment]
   # Configurações de build
+  NODE_VERSION = "18"
   CI = "false"
 
 # Redirecionamentos para SPA (Single Page Application)
@@ -48,4 +46,3 @@
   for = "/*.pdf"
   [headers.values]
     Cache-Control = "public, max-age=31536000"
-
